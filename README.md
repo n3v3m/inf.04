@@ -5,3 +5,6 @@ Rozwiązania do egzaminów zawodowych inf 0.4 - Projektowanie, programowanie i t
 ## links
 
 - [inf.04](https://github.com/n3v3m/inf.04)
+  - .
+- [inf.04](https://github.com/n3v3m/inf.04)
+  - .
