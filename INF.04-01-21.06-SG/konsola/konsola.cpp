@@ -48,10 +48,10 @@ class tablica {
         * ****************************************************/
         void sortuj()
         {
-            for (int i = 0; i < 10 - 1; i++) {
-                for (int j = 0; j < 10 - i - 1; j++) {
-                    if (tab[j] > tab[j + 1]) {
-                        swap(tab[j], tab[j + 1]);
+            for (int i = 0; i < 10; i++) {
+                for (int j = i; j < 10; j++) {
+                    if (tab[i] > tab[j]) {
+                        swap(tab[i], tab[j]);
                     }
                 }
             }
