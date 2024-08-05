@@ -6,3 +6,4 @@ Rozwiązania do egzaminów zawodowych inf 0.4 - Projektowanie, programowanie i t
 
 - [INF.04-01-21.06-SG](https://github.com/n3v3m/inf.04/tree/main/INF.04-01-21.06-SG)
   - [Aplikacja konsolowa](https://github.com/n3v3m/inf.04/tree/main/INF.04-01-21.06-SG/konsola)
+  - [Aplikacja mobilna](https://github.com/n3v3m/inf.04/tree/main/INF.04-01-21.06-SG/mobilna)
