@@ -4,12 +4,7 @@ using namespace std;
 class tablica {
     private:
         int tab[10];
-        /********************************************************
-        * nazwa funkcji:        znajdzNajwieksza
-        * parametry wejściowe:  Brak
-        * wartość zwracana:     Funkcja znajduje nawiększą z liczb podanych przez użytkownika w stosie "tab" 
-        * autor:                000000000000
-        * ****************************************************/
+
         int znajdzNajwieksza()
         {
             int najwiekszaLiczba = tab[0];
@@ -25,12 +20,7 @@ class tablica {
             return tab[najwiekszaLiczba];
         }
     public:
-        /********************************************************
-        * nazwa funkcji:        wczytaj
-        * parametry wejściowe:  Brak
-        * wartość zwracana:     Funkcja pobiera od użytkownika 10 liczb całkowitych i przechowuje je w stosie o nazwie "tab"
-        * autor:                000000000000
-        * ****************************************************/
+
         void wczytaj()
         {
             cout << "Wypisz 10 liczb calkowitych: \n";
@@ -40,12 +30,7 @@ class tablica {
             }
             cout << "\nNajwieksza liczba z wypisanych jest: " << znajdzNajwieksza() << "\n";
         }
-        /********************************************************
-        * nazwa funkcji:        sortuj
-        * parametry wejściowe:  Brak
-        * wartość zwracana:     Funkcja sortuje liczby podane wcześniej przez użytkownika a następnie je wypisuje
-        * autor:                000000000000
-        * ****************************************************/
+
         void sortuj()
         {
             for (int i = 0; i < 10; i++) {
