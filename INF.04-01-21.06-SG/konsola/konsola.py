@@ -16,7 +16,7 @@ class Tablica:
         print("Wypisz 10 liczb calkowitych: \n")
         for i in range(10):
             self.tablica[i] = int(input())
-        print("Najwieksza liczba z wypisanych jest: " + tab.__znajdzNajwieksza())
+        print("Najwieksza liczba z wypisanych jest: " + self.__znajdzNajwieksza())
 
     def sortuj(self):
         for i in range(10):
