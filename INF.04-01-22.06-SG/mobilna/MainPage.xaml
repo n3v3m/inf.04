@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <StackLayout  Padding="20" Spacing="5">
+            <Label
+                Text="Domek w górach"
+                TextColor="gray"
+                FontSize="Large" />
+
+            <Image
+                Source="obraz.jpg"
+                Aspect="AspectFill"
+                HorizontalOptions="FillAndExpand"/>
+
+            <HorizontalStackLayout BackgroundColor="Teal" >
+
+                <Button
+                    x:Name="POLUB"
+                    Text="POLUB" 
+                    Clicked="dodajPolubienie"
+                    TextColor="White"
+                    BackgroundColor="Teal"/>
+
+                <Button
+                    x:Name="USUN"
+                    Text="USUŃ" 
+                    Clicked="usunPolubienie"
+                    TextColor="White"
+                    BackgroundColor="Teal" />
+
+                <Button
+                    x:Name="ZAPISZ"
+                    Text="ZAPISZ" 
+                    TextColor="White"
+                    BackgroundColor="Teal"/>
+
+            </HorizontalStackLayout>
+
+            <Label
+                x:Name="licznik"
+                Text="0 polubień"
+                HorizontalTextAlignment="End"
+                TextColor="gray" />
+
+            <BoxView 
+                HeightRequest="1" 
+                Color="Gray" />
+
+            <Label
+                Text="Opis"
+                FontAttributes="Bold"
+                TextColor="gray" />
+
+            <Label
+                Text="Odwiedź komfortowy domek w Sudetach, blisko do szlaków turystycznych"
+                TextColor="gray" />
+
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
