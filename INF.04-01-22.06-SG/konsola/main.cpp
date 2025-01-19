@@ -42,7 +42,7 @@ int main()
 
     int x;
 
-    const int n = 51; // d³ugoœæ tablicy
+    const int n = 51; // dlugosc tablicy
 
     std::cout << "Wpisz liczbe z zakresu od 1 do 100 ktora chcesz wyszukac: \n";
     std::cin >> x;
