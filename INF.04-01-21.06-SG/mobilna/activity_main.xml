@@ -1,75 +1,42 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:minWidth="25px"
-    android:minHeight="25px"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:id="@+id/linearLayout1">
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
 
-    <TextView
-        android:text="Rejestruj konto"
-        android:layout_width="match_parent"
-        android:background="#008080"
-        android:textColor="#FFFFFF"
-        android:textSize="70px"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView1" />
+    <ScrollView>
+        <StackLayout  Padding="20" Spacing="5" BackgroundColor="White">
+            <Label
+                Text="Rejestruj konto"
+                TextColor="#008080"
+                FontSize="Large" />
 
-    <TextView
-        android:text="Podaj e-mail:"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/emailtext" />
+            <Label
+                Text="Podaj e-mail" TextColor="gray" />
 
-    <EditText
-        android:inputType="textEmailAddress"
-        android:hint="email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/emailEdit" />
+            <Entry x:Name="email" TextColor="Black" />
 
-    <TextView
-        android:text="Podaj hasło:"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/passtext" />
+            <Label
+                Text="Podaj hasło" TextColor="gray" />
 
-    <EditText
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/passwordEdit" />
+            <Entry x:Name="haslo" TextColor="Black"/>
+            
+            <Label
+                Text="Powtórz hasło" TextColor="gray" />
 
-    <TextView
-        android:text="Powtórz hasło:"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/passtext2" />
+            <Entry x:Name="repeatHaslo" TextColor="Black" />
 
-    <EditText
-        android:inputType="textPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/passwordEdit2" />
+            <Button
+                x:Name="zatwierdz"
+                Text="Zatwierdź" 
+                Clicked="funkcjaZatwierdz"
+                TextColor="White"
+                BackgroundColor="Teal"
+                WidthRequest="200"
+                HorizontalOptions="Center"/>
 
-    <Button
-        android:text="Zatwierdź"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:id="@+id/button"
-        android:layout_marginLeft="0.0dp"
-        android:layout_marginRight="0.0dp" />
+            <Label x:Name="komunikat" Text="Autor: 000000000000000"  TextColor="gray"/>
 
-    <TextView
-        android:text="Autor: 0000000000"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:id="@+id/message" />
+        </StackLayout>
+    </ScrollView>
 
-
-
-</LinearLayout>
+</ContentPage>
