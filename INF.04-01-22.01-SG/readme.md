@@ -1,1 +1,0 @@
-[INF.04-01-21.06-SG](https://github.com/n3v3m/inf.04/tree/main/INF.04-01-21.06-SG)
